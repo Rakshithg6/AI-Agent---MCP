@@ -11,7 +11,7 @@ st.session_state["session_id"] = session_id
 user_input = st.text_input("Enter your query:")
 if st.button("Send"):
     try:
-        res = requests.post("https://ai-agent---mcp-2pcp4imvvhzrhegrx7jjyb.streamlit.app/", data={
+        res = requests.post("https://ai-agent---mcp-2pcp4imvvhzrhegrx7jjyb.streamlit.app/chat", data={
             "session_id": session_id,
             "message": user_input
         })
@@ -27,7 +27,7 @@ file = st.file_uploader("Upload PDF", type=["pdf"])
 if file:
     try:
         res = requests.post(
-            "https://ai-agent---mcp-2pcp4imvvhzrhegrx7jjyb.streamlit.app/",
+            "https://ai-agent---mcp-2pcp4imvvhzrhegrx7jjyb.streamlit.app/upload/",
             files={"file": (file.name, file, "application/pdf")}
         )
         res.raise_for_status()
