@@ -1,13 +1,13 @@
-# 🧠 AI Customer Support Agent (RAG with Ollama + LangChain + FastAPI + Streamlit)
+# AI Customer Support Agent (RAG with Ollama + LangChain + FastAPI + Streamlit)
 
 This project is an AI-powered customer support assistant built using:
 
-- 🤖 LangChain (RAG with FAISS & Ollama)
-- 📄 PDF Knowledge Ingestion
-- 🔥 FastAPI for backend API
-- 🌐 Streamlit for web frontend
+- LangChain (RAG with FAISS & Ollama)
+- PDF Knowledge Ingestion
+- FastAPI for backend API
+- Streamlit for web frontend
 
-## 🚀 Features
+##  Features
 
 - Upload PDF documents to build a custom knowledge base.
 - Ask natural language questions about the uploaded content.
@@ -15,7 +15,7 @@ This project is an AI-powered customer support assistant built using:
 - Powered by local Ollama LLM (e.g. LLaMA2).
 - Uses FAISS for vector store & semantic retrieval.
 
-## 🏗️ Project Structure
+## Project Structure
 
 ```bash
 ai-customer-support-mcp/
